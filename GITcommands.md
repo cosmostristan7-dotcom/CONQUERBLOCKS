@@ -168,6 +168,20 @@ Since VSCode and GIT are case-unsensitive whenever you try to rename a file.name
 
 Internet eyes are case-sensitive, therefore if by any chance it finds a lovercase file name, it will show you a 404 error. That's why your path Name.files must be case-sensitive. 
 
-## to be continued...
+## TO ADD A NEW REPOSITORY.
+
+1. Go to your GitHub and create the new repository. 
+2. Open your VS-Code and place yourself within the FOLDER you want to add as REPOSITORY. type this commands:
+
+2.1. git add .
+2.2. git status (when you see the list of the items in green it means they are waiting for you to link them in the new repository).
+2.3. Type: git remote add origin https://github.com/cosmostristan7-dotcom/name_of_your_repository.git //Then, press enter.
+
+By doing this, you will finally link your current FOLDER to your new REPOSITORY in GitHub.
+
+3. To double check your URL was successfully added, run this command: git remote -v // Press enter.
+4. NOW, push your files to GitHub by typing: git push -u origin main // Press enter.
+5. Now remember after any change you do, always type (opt. 6), so your changes can be saved in your repository.
+6. Type, git commit -m "and add your first commit." // Press enter.
 
 
