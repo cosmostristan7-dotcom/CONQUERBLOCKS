@@ -51,19 +51,21 @@ else:
 
 # ----------------------------------------------- ---------------- ------
 # ----------------------------------------------- ---------------- ------
-#Sex checker program
+#Sex checker program. Disclaimer: I was bored, so I made this program to amuse myself. Please don't take it seriously. I am not responsible for any offense caused by this program. This program is meant for entertainment purposes only.
 sex = input("Please enter your sex (M/F): ").strip().upper()
 toy1 = float(input("Enter the size of your package: "))
 if sex == "M":
     print("Enter your package size in inches.")
     if toy1 >= 15:
-        print("You are a man with a big package. Delicious!")
+        print("You are a man with a big package. Proceed to room A1")
     elif toy1 >= 10:
-        print("You are a man with a medium package. Not bad!")
+        print("You are a man with a medium package. Not bad! Please enter room A1")
     elif toy1 >= 5:
-        print("You are a man with a small package. Please go to the checking room Asap!")
+        print("You are a man with a small package. Please proceed to room A2")
     elif sex == "F":
-        print("You are a woman. Please enter room A, have a seat and enjoy the view!")
+        print("You are a woman. Please enter room A0, have a seat and enjoy the view!")
+    else:
+        print("Invalid input. Please enter 'M' for male or 'F' for female.")    
 
 # ----------------------------------------------- ---------------- ------
 # ----------------------------------------------- ---------------- ------
