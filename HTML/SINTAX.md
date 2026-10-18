@@ -492,6 +492,71 @@
 <hr>
 <div>
     <article>
-        <p><strong>`<dl>` ... `</dl>`, stands for detailed list.
+        <p><strong>`<dl>` ... `</dl>`, stands for detailed list.</p>
+    </article>
+</div>
+<hr>
+<!-- ---------------------------------------------------------- -->
+ <p>ID TAGS OR CLASS TAGS wich are within a sintax tag.</p>
+ <p>...</p>
+ <!-- ---------------------------------------------------------- -->
+ <!-- ---------------------------------------------------------- -->
+<h1>`::marker`</h1>
+<p>This is an pseudo-elemement to displays "bullet points". This is a  CSS pseudo-element, written as <span>::marker.</span>The 2 :: indicates a seudo-element.</p>
+<!-- ---------------------------------------------------------- -->
+<!-- ---------------------------------------------------------- -->
+ <hr>
+ <h1>`<dl>`</h1>
+ <p>Stands for Description List. It is a tag mostly used in dictionaries deficnitions. It doens't have `<li>`...`</li>` tags. It has its own sub tags.</p>
+ <h2>Its subtags will be:</h2>
+    <ul>
+    ::maker
+        <li>dt: Term to be Defined.</li>
+        <li>dd: Term Definition.</li>
+    </ul>
+<!-- ---------------------------------------------------------- -->
+<!-- ---------------------------------------------------------- -->
+<hr>
+<h1>Nested Lists</h1>
+<p>we can have lists within other list.</p>
+<strong>EXAMPLE:</strong>
+<p>If my nested list requires no order, then, I must use `<ul>...`</ul>`.</p>
+<ul>
+    ::marker
+    <li>Albion</li>
+    <li>MBLusa
+        <ul>
+            <li>Mage: Yve</li>
+            <li>Support: Angela</li>
+            <li>Marksman: Moskov</li>
+        </ul>
+    </li> <!--To add an extra list, we need to include it within this subtag <li>...</li>. If needed we may use `<ul>` or `<ol>` or `<dl>` (maybe, I need to double check this last sttmnt). -->
+    <li>HOK</li>
+    <li>ROBLOX</li>
+    <li>VScode
+        <ul>
+            <li>Python</li>
+            <li>MySQL</li>
+            <li>HTML</li>
+            <li>VM</li>
+            <li>TERMUX</li>
+        </ul>
+    </li>
+<!-- ---------------------------------------------------------- -->
+<!-- ---------------------------------------------------------- -->
+ <hr>
+ <strong>TASK: NESTED LIST</strong>
+ <p>Do a nested list, mix them all as you need to.</p>
+<!-- ---------------------------------------------------------- -->
+<!-- ---------------------------------------------------------- -->
+ <hr>
+ <h1>FIGURE AND FIGCAPTION</h1>
+ <p>It's a grouping tag. It groups media such as videos or basic images.</p>
+ <p>It works with CSS.</p>
+ <strong>EXAMPLE:</strong>
+ <hr>
+<!-- ---------------------------------------------------------- -->
+<!-- ---------------------------------------------------------- -->
+ ...
 </body>
 ```html
