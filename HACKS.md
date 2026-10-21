@@ -27,4 +27,31 @@ Instead of scrolling and hunting line-by-line, press Ctrl + F (Windows) or Cmd +
 
 * `CMD + R`, inside GitHub or any browser page, it refresh or reload the page.
 
-* `...`, 
+<!-- ----------------------------------- --------------------- --> 
+<!-- ----------------------------------- --------------------- -->
+
+# SETTING UP DOCKER.-
+
+1. On your Terminal, you have to initalize `Docker init`. Inside the folder where you have the &lt;index.html&gt;.
+2. Docker will do the hard work for you. It will create what you need by automatically generating the Dockerfile, .dockerignore, and docker-compose.yml files for you!
+3. Once your container is created follow these steps:
+<!-- ------------------------------------------------------- -->
+A. Type this command into your terminal and press Enter:
+`docker compose up --build -d`
+<!-- ------------------------------------------------------- -->
+# What it does:
+<!-- ------------------------------------------------------- -->
+`--uild`: Tells Docker to build the image using the new files it just generated.
+`-d`: Runs it in detached mode (in the background).
+<!-- ------------------------------------------------------- -->
+<!-- ------------------------------------------------------- -->
+(Note: You saw a small warning about an "orphan container" html-app-1 because we changed the service name from when it was the old template. If you ever want to clean that old container up, you can just run docker compose up --build -d --remove-orphans).
+<!-- ------------------------------------------------------- -->
+<!-- ------------------------------------------------------- -->
+# In order to stop Docker from running on the background, run this command on your Terminal:
+`docker compose down`, press enter.
+
+# To re-start the process again, run instead:
+`docker compose up -d`
+<!-- ------------------------------------------------------- -->
+<!-- ------------------------------------------------------- -->
