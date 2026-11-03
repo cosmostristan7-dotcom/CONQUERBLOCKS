@@ -492,7 +492,7 @@
 <hr>
 <div>
     <article>
-        <p><strong>`<dl>` ... `</dl>`, stands for detailed list.</p>
+        <p><strong>`<dl>` ... `</dl>`, stands for detailed list. They are used to show the word and their meaning as in a dictionary.</p>
     </article>
 </div>
 <hr>
@@ -509,11 +509,11 @@
  <h1>`<dl>`</h1>
  <p>Stands for Description List. It is a tag mostly used in dictionaries deficnitions. It doens't have `<li>`...`</li>` tags. It has its own sub tags.</p>
  <h2>Its subtags will be:</h2>
-    <ul>
+    <dl>
     ::maker
         <li>dt: Term to be Defined.</li>
         <li>dd: Term Definition.</li>
-    </ul>
+    </dl>
 <!-- ---------------------------------------------------------- -->
 <!-- ---------------------------------------------------------- -->
 <hr>
@@ -557,6 +557,191 @@
  <hr>
 <!-- ---------------------------------------------------------- -->
 <!-- ---------------------------------------------------------- -->
- ...
+ 
+<header>
+    <h1>TABLES</h1>
+    <p>These lines will soeak about the table elements. Tables are used in many ways such as email strucures, and or table dates in a singular way.</p>
+</header>
+
+<div class="article">
+    <main>
+        <section>
+            <h1>TABLE's applications.</h1>
+            <p>Earlier in coding world, when CSS was not a common language, the table element was used primarly to separate the different <span>Semantic tags.</span>There was a long chart on every semantic tag.</p>
+            <hr color="darkblue" width="70%">
+            <p>It was something taken out of a nightmare; still, it was needed to do because at that time, the tag distribution would have not been possible to be created. Therefore, the order was set to be lie this:</p>
+            <ol>
+                <hr color="black" width="70">
+                <li>`<header>`/`</header>`<li>
+                <hr color="black" width="70">
+                <li>`<nav>`/`</nav>`</li>
+                <hr color="black" width="70">
+                <li>`<section>`/`</section>`
+                    <ul>
+                        <li>`<article>`/`</article>`<li>
+                        <li>`<article>`/`</article>`</li>
+                        <li>`<article>`/`</article>`</li>
+                    </ul>
+                    <hr color="black" width="70">
+                </li>
+                <li>`<aside>`/`</aside>` <!--This part is displayed on the right side of the real webpage. -->
+                <hr color="black" width="70">
+                <li>`<footer>`/`</footer>
+                <hr color="black" width="70">
+            </ol>
+        </section>
+        <div class="article">
+            <article>
+                <h1>Table's applications, part II.</h1>
+                <p>Nowadays `<table>` tag is highly used when building up an email display.</p>
+                <h2>EXAMPLE:</h2>
+                <hr color="darkgreen" width="70">
+                <!--HEADER, the title on the table --->
+                <table role="presentation" border="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                        </td>
+                    <tr>
+                </table>
+                <!--BODY-->
+                <table role="presentation" border="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                        </td>
+                    <tr>
+                </table>
+
+                <!--FOOTER-->
+                <table role="presentation" border="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                        </td>
+                    <tr>
+                </table>
+                <hr color="darkgreen" width="70%">
+            </article>
+        </div>
+        <br>
+        <div class="article">
+            <article>
+                <table role="presentation" color-border="darkgreen" cellspacing="2%" width="100%">
+                    <tr>
+                        <td><h1 color="crismon">`<table>`/`</table>`</h1></td>
+                    </tr>
+                </table>
+
+    <table role="presentation" color-border="dark green" width="100%">
+    <tr>
+        <td>
+            `<table>`/`</table>` tags cover the whole data you are going to include inside, whether this is a title and/or an article you need your table format to get.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Keep in mind that you will need to have your structure organized properly. Here is how it works:
+            <ol>
+                <li>
+                    <dl>
+                        <dt>`<table>`/`</table>`</dt>
+                        <dd>If you are going to add a title, remember you need to include the row and cell tags as follows:
+                            <ol>
+                                <li>`<tr>`/`</tr>`: Defines a unique table row.</li>
+                                <li>`<td>`/`</td>`: Defines a unique cell (column) inside that row.</li>
+                            </ol>
+                        </dd>
+                    </dl>
+                </li>
+                <li>And again, if you are going to add your article after you named your table, you will need to create the appropriate rows (`<tr>`) and cells (`<td>`) inside accordingly.</li>
+            </ol>
+        </td>
+    </tr>
+    </table>
+    </main>
+    <hr color="darkgreen" widght="70%">
+    <div>
+        <article>
+            <h1>`<td>`, `<th>`, attributes: colspan and rowspan</h1>
+            <p>To make the list of rows and columns, do this trick: tr*8>td*5, and press enter.</p>
+            <ol>
+                <li><a 
+                href="Example_colspan.html">Example 1</a></li>
+                <li><a 
+                href="Example_rowspan.html">Example 2</a></li>
+                <li><a 
+                href="Example_mixing_attributes.html">Example 3</a></li>
+            </ol>     
+        </article>
+    </div>
+   <hr color="darkgreen" widght="70%">
+    <!-- ------------------------------------------------------- -->
+    <!-- ------------------------------------------------------- -->
+     <div>
+        <article class="article">
+            <h1 color="brown">TABLE'S SEMANTIC TAGS</h1>
+            <p>Tables use semantic tags as a normal html file. They do the same function, this is, they help to keep order when the web reads the information.</p>
+            <hr color="darkgreen" widght="70%">
+            <h2>These TABLE's Semantic Tags are:</h2>
+            <dl>
+                ::maker
+                <dt>`<thead>`...`</thead>` Tag:</dt>
+                <dd>While `<th>` defines the individual header cells, the `<thead>` tag is a structural container used to group the header content of an entire HTML table. They do as follow:
+                    <ul>
+                        <li>They add semantic to my tables.</li>
+                        <li>Row or column header cell.</li>
+                        <li>Browsers usually render its content in bold.</li>
+                    </ul>
+                </dd>
+                <dt>`<tbody>`...`</tbody>` Tag:</dt>
+                <dd>The `<tbody>` (table body) tag is a structural HTML element used to group the primary data rows (<tr>) of a table. It acts as a container for the main content, sitting between the `<thead>` (header) and `<tfoot>` (footer) sections.</dd>
+                <dd>`<tfoot>`...`</tfoot>` Tag:</dd>
+                <dt>The `<tfoot>` (table footer) tag is a structural HTML element used to group summary or footer rows at the bottom of a table—such as totals, averages, or concluding notes.</dt>
+            </dl>
+            <h2>EXAMPLE:</h2>
+            <p>Click on the link below:
+                <a href="Example_semantic_table.html">Example 4</a>
+            </p>
+            <h1>WHEN BUILDING A SEMANTIC TABLE, keep in mind to follow the structure like this:</h1>
+            <ol>
+                <li>`<table>`... ... ...</li>
+                <li>`<thead>` ... ... ...`</thead>`</li>
+                <li>`<tfoot>` ... ... ...`</tfoot>`</li>
+                <li>`<tbody>` ... ... ...
+                    `</tbody>`
+                    `</table>`
+                </li>
+        </article>
+    </div>
+        <hr color="darkgreen" widght="70%">
+    <div>
+        <article class="article">
+            <h1>Table inside another table</h1>
+            <p>...</p>
+        </article>
+    </div>
+    <!-- ------------------------------------------------------- -->
+    <!-- ------------------------------------------------------- -->
+    <div>
+        <header>
+            <h1>Web Development & HTML: Forms</h1>
+            <strong>CLASS 10</strong>
+        </header>
+    </div>
+        <hr color="darkgreen" widght="70%">
+    <div>
+        <article class="blog">
+            <h2>FORMS:</h2>
+            <p>An HTML form (<form>) is a container used to collect user input—such as text, selections, or files—and send it to a server for processing or handle it via JavaScript.</p>
+            <strong>Core Concept:</strong>
+            <p>Purpose: Collects interactive user data (e.g., logins, searches, registrations, contact details).</p>
+            <strong>Key Attributes:</strong>
+            <dl>
+                <dt>action:</dt>
+                <dd>Specifies where the collected data is sent upon submission.</dd>
+                <dt>method:</dt>
+                <dd>Defines how data is sent (commonly GET for retrieving/querying data or POST for secure submissions like passwords or new records).</dd>
+            </dl>
+            <strong>KEY ELEMENTS:</strong>
+            <p>Uses controls like `<input>`, `<textarea>`, `<select>`, and `<button>` wrapped inside `<label>` tags for accessibility.</p>
+        </article>
 </body>
 ```html
