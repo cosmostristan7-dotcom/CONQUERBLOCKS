@@ -669,6 +669,13 @@
                 href="Example_rowspan.html">Example 2</a></li>
                 <li><a 
                 href="Example_mixing_attributes.html">Example 3</a></li>
+            </ol>
+            <h1>IMPORTANT TO REMEMBER:</h1>
+            <p>Here is how it breaks down:<p>
+            <ol>
+                <li>(<th>) (Table Header): This is the tag that automatically renders its content in bold (and usually centers it) because it represents a title or header for a row or column.</li>   
+                <br>
+                <li>(<td>) (Table Data): This tag displays normal, regular-weight text. It is used to store the standard data, facts, or "non-titles" inside your table.</li>
             </ol>     
         </article>
     </div>
@@ -742,6 +749,47 @@
             </dl>
             <strong>KEY ELEMENTS:</strong>
             <p>Uses controls like `<input>`, `<textarea>`, `<select>`, and `<button>` wrapped inside `<label>` tags for accessibility.</p>
+            <!-- ----------------------------------------- --> 
+            <h1>FORM'S ATTRIBUTES</h1>
+            <dl>
+                <dt>action</dl>
+                <dd>Backend URL address to where the from information taken will be sent.</dd>
+            <!-- ----------------------------------------- -->
+                <dt>method</dt>
+                <dd>HTTP sending method. (GET) by an URL. (POST) for a bigger sending data.</dd>
+            <!-- ----------------------------------------- -->
+                <dt>name</dt>
+                <dd>Form name. It is useful to indetify the form and processing it eventually.</dd>
+            <!-- ----------------------------------------- -->
+                <dt>target</dt>
+                <dd>Name of the site where the form will be opened. (\blank)to start a new window (pestana).</dd>
+            <!-- ----------------------------------------- -->
+                <dt>enctype</dt>
+                <dd>Sending form Encryption. Important for file sending.</dd>
+            <!-- ----------------------------------------- -->
+                <dt>accept-charset</dt>
+                <dd>It forces to apply an encryption when Form Text Settings is used.</dd>
+            <!-- ----------------------------------------- -->
+                <dt>autocomplete</dt>
+                <dd>It turns AUTOFILLING ON/OFF to all parts on the form.</dd>
+            <!-- ----------------------------------------- -->
+                <dt>novalidate</dl>
+                <dd>(BOOLEAN) It deactivates HTML5 Validation on a form.</dd>
+            <!-- ----------------------------------------- -->
+            </dl>
+            <!-- ----------------------------------------- -->
+            <!-- ----------------------------------------- -->
+            <!-- ----------------------------------------- -->
+            <h1>TAGS and ATTRIBUTES</h1>
+            <br>
+            <table role="presentation" border="0" cellspacing="0" width="100%">
+                    <tr>
+                        <th>SHORT TEXT DATA</th>
+                        <th>EXAMPLES</th>
+                        <th>TAG OR ATTRIBUTE TO BE USED</th>
+                    </tr>
         </article>
+    </div>
+    <p>I will keep working on my SINTAX.hmtl file.</p>
 </body>
 ```html
