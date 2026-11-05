@@ -512,54 +512,54 @@
     </dl>
 <!-- ---------------------------------------------------------- -->
 <!-- ---------------------------------------------------------- -->
-<hr>
-<h1>Nested Lists</h1>
-<p>we can have lists within other list.</p>
-<strong>EXAMPLE:</strong>
-<p>If my nested list requires no order, then, I must use `<ul>...`</ul>`.</p>
-<ul>
+    <hr>
+    <h1>Nested Lists</h1>
+    <p>we can have lists within other list.</p>
+    <strong>EXAMPLE:</strong>
+    <p>If my nested list requires no order, then, I must use &lt;ul&gt;.</p>
+    <ul>
     ::marker
-    <li>Albion</li>
-    <li>MBLusa
-        <ul>
-            <li>Mage: Yve</li>
-            <li>Support: Angela</li>
-            <li>Marksman: Moskov</li>
-        </ul>
-    </li> <!--To add an extra list, we need to include it within this subtag <li>...</li>. If needed we may use `<ul>` or `<ol>` or `<dl>` (maybe, I need to double check this last sttmnt). -->
-    <li>HOK</li>
-    <li>ROBLOX</li>
-    <li>VScode
-        <ul>
-            <li>Python</li>
-            <li>MySQL</li>
-            <li>HTML</li>
-            <li>VM</li>
-            <li>TERMUX</li>
-        </ul>
-    </li>
+        <li>Albion</li>
+        <li>MBLusa
+            <ul>
+                <li>Mage: Yve</li>
+                <li>Support: Angela</li>
+                <li>Marksman: Moskov</li>
+            </ul>
+        </li> <!--To add an extra list, we need to include it within this subtag <li>...</li>. If needed we may use `<ul>` or `<ol>` or `<dl>` (maybe, I need to double check this last sttmnt). -->
+        <li>HOK</li>
+        <li>ROBLOX</li>
+        <li>VScode
+            <ul>
+                <li>Python</li>
+                <li>MySQL</li>
+                <li>HTML</li>
+                <li>VM</li>
+                <li>TERMUX</li>
+            </ul>
+        </li>
 <!-- ---------------------------------------------------------- -->
 <!-- ---------------------------------------------------------- -->
- <hr>
- <strong>TASK: NESTED LIST</strong>
- <p>Do a nested list, mix them all as you need to.</p>
+    <hr>
+    <strong>TASK: NESTED LIST</strong>
+    <p>Do a nested list, mix them all as you need to.</p>
 <!-- ---------------------------------------------------------- -->
 <!-- ---------------------------------------------------------- -->
- <hr>
- <h1>FIGURE AND FIGCAPTION</h1>
- <p>It's a grouping tag. It groups media such as videos or basic images.</p>
- <p>It works with CSS.</p>
- <strong>EXAMPLE:</strong>
- <hr>
+    <hr>
+    <h1>FIGURE AND FIGCAPTION</h1>
+    <p>It's a grouping tag. It groups media such as videos or basic images.</p>
+    <p>It works with CSS.</p>
+    <strong>EXAMPLE:</strong>
+    <hr>
 <!-- ---------------------------------------------------------- -->
 <!-- ---------------------------------------------------------- -->
  
-<header>
-    <h1>TABLES</h1>
-    <p>These lines will soeak about the table elements. Tables are used in many ways such as email strucures, and or table dates in a singular way.</p>
-</header>
+    <header>
+        <h1>TABLES</h1>
+        <p>These lines will soeak about the table elements. Tables are used in many ways such as email strucures, and or table dates in a singular way.</p>
+    </header>
 
-<div class="article">
+    <div class="article">
     <main>
         <section>
             <h1>TABLE's applications.</h1>
@@ -642,7 +642,7 @@
                         <dd>If you are going to add a title, remember you need to include the row and cell tags as follows:
                             <ol>
                                 <li>`<tr>`/`</tr>`: Defines a unique table row.</li>
-                                <li>`<td>`/`</td>`: Defines a unique cell (column) inside that row.</li>
+                                <li>&lt;td&gt; ... &lt;/td&gt;: Defines a unique cell (column) inside that row.</li>
                             </ol>
                         </dd>
                     </dl>
@@ -705,13 +705,11 @@
             </p>
             <h1>WHEN BUILDING A SEMANTIC TABLE, keep in mind to follow the structure like this:</h1>
             <ol>
-                <li>`<table>`... ... ...</li>
-                <li>`<thead>` ... ... ...`</thead>`</li>
-                <li>`<tfoot>` ... ... ...`</tfoot>`</li>
-                <li>`<tbody>` ... ... ...
-                    `</tbody>`
-                    `</table>`
-                </li>
+                <li>&lt;table&gt;... ... ...This tag will contain the entire table.</li>
+                <li>&lt;thead&gt; ... ... ...This tag will include the header content.</li>
+                <li>&lt;tfoot&gt; ... ... ...This tag will include the footer content.</li>
+                <li>&lt;tbody&gt; ... ... ...&lt;/tbody&gt;This tag will include the body content.</li>
+                <li>&lt;/table&gt;.... ... ...This tag will close the entire table.</li>
         </article>
     </div>
         <hr color="darkgreen" widght="70%">
@@ -784,7 +782,12 @@
                         <th>EXAMPLES</th>
                         <th>TAG OR ATTRIBUTE TO BE USED</th>
                     </tr>
-                     
+                     <tr>
+                        <td>Text Input</td>
+                        <td>&lt;input type="text" name="username"&gt;</td>
+                        <td>&lt;input&gt;</td>
+
+                     </tr>
 
         </article>
     </div>
