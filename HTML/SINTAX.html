@@ -255,7 +255,7 @@
         These tags make your HTML semantic, accessible, and easier to maintain.
     </p>
 
-    <h2 style="color: red;">Structural Grouping Tags, continue.</h2> 
+    <h2 color:"red">Structural Grouping Tags, continue.</h2> 
     <p>&lt;div&gt; is a block - level container.<br>
     Its job is to group elements together so you can treat them as one unit.<br>
     Think of it like a box you put things inside.<br>
@@ -577,9 +577,8 @@
             </ol>
             <h1>IMPORTANT TO REMEMBER:</h1>
             <ol>
-                <li>(&lt;th&gt;) (Table Header): This is the tag that automatically renders its content in bold (and usually centers it) because it represents a title or header for a row or column[cite: 1].</li>   
-                <br>
-                <li>(&lt;td&gt;) (Table Data): This tag displays normal, regular-weight text. It is used to store standard data or non-titles.</li>
+                <li>&lt;th&gt; (Table Header): This is the tag that automatically renders its content in bold (and usually centers it) because it represents a title or header for a row or column[cite: 1].</li>   
+                <li>&lt;td&gt; (Table Data): This tag displays normal, regular-weight text. It is used to store standard data or non-titles.</li>
             </ol>     
         </article>
     </div>
@@ -657,22 +656,108 @@
                 <dt>novalidate</dt>
                 <dd>(BOOLEAN) Deactivates HTML5 validation on a form.</dd>
             </dl>
-
-            <h1>TAGS and ATTRIBUTES</h1>
-            <br>
-            <table role="presentation" border="0" cellspacing="0" width="100%">
-                <tr>
-                    <th>SHORT TEXT DATA</th>
-                    <th>EXAMPLES</th>
-                    <th>TAG OR ATTRIBUTE TO BE USED</th>
-                </tr>
-                <tr>
-                    <td>Text Input</td>
-                    <td>&lt;input type="text" name="username"&gt;</td>
-                    <td>&lt;input&gt;</td>
-                </tr>
-            </table>
         </article>
     </div>
+    <hr color="darkred" width="80%" frameborder="0">
+    <div>
+        <article>
+            <h1>FORMS: INPUT TYPES</h1>
+            <p>HTML forms use various input types to collect different kinds of user data. Each input type is specified using the &lt;input&gt; tag with the type attribute.</p>
+            <hr color="darkred" width="80%" frameborder="1">
+            <table> 
+                <tr>
+                    <th>Input Type:</th>
+                    <th>Description:</th>
+                    <th>Example:</th>
+                </tr>
+                <tr>
+                    <td>text</td>
+                    <td>Single-line text input.</td>
+                    <td>&lt;input type="text" name="username"&gt;</td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td>Masked input for sensitive data.</td>
+                    <td>&lt;input type="password" name="password"&gt;</td>
+                </tr>
+                <tr>
+                    <td>email</td>
+                    <td>Input for email addresses with validation.</td>
+                    <td>&lt;input type="email" name="email"&gt;</td>
+                </tr>
+                <tr>
+                    <td>number</td>
+                    <td>Input for numeric values.</td>
+                    <td>&lt;input type="number" name="age"&gt;</td>
+                </tr>
+                <tr>
+                    <td>checkbox</td>
+                    <td>Allows selection of multiple options.</td>
+                    <td>&lt;input type="checkbox" name="subscribe"&gt;</td>
+                </tr>
+                <tr>
+                    <td>radio</td>
+                    <td>Allows selection of one option from a group.</td>
+                    <td>&lt;input type="radio" name="gender" value="male"&gt; Male &lt;input type="radio" name="gender" value="female"&gt; Female</td>
+                </tr>
+                <tr>
+                    <td>submit</td>
+                    <td>Button to submit the form.</td>
+                    <td>&lt;input type="submit" value="Submit"&gt;</td>
+                </tr>
+                <tr>
+                    <td>reset</td>
+                    <td>Button to reset the form fields.</td>
+                    <td>&lt;input type="reset" value="Reset"&gt;</td>
+                </tr>
+                <tr>
+                    <td>file</td>
+                    <td>Input for file uploads.</td>
+                    <td>&lt;input type="file" name="profilePic"&gt;</td>
+                </tr>
+                <tr>
+                    <td>date</td>
+                    <td>Input for selecting a date.</td>
+                    <td>&lt;input type="date" name="birthdate"&gt;</td>
+                </tr>
+                <tr>
+                    <td>color</td>
+                    <td>Input for selecting a color.</td>
+                    <td>&lt;input type="color" name="favColor"&gt;</td>
+                </tr>       
+            </table>
+            <br>
+            <p>These input types enhance user experience and data validation in HTML forms.</p>
+        </article>
+    </div>
+    <hr color="darkgreen" width="100%">
+    <div>
+        <article>
+            <h1>FORM ELEMENTS: TEXTAREA, SELECT, BUTTON</h1>
+            <p>In addition to &lt;input&gt; types, HTML forms use other elements to collect user data:</p>
+            <ul>
+                <li><strong>&lt;textarea&gt;</strong>: Multi-line text input for longer responses.</li>
+                <li><strong>&lt;select&gt;</strong>: Dropdown menu for selecting one or multiple options.</li>
+                <li><strong>&lt;button&gt;</strong>: Clickable button that can submit the form or trigger JavaScript actions.</li>
+            </ul>
+            <p>These elements provide flexibility in designing forms and collecting diverse types of user input.</p>
+        </article>
+    </div>
+    <hr color="darkgreen" width="100%">
+    <div>
+        <article>
+            <h1>FORM VALIDATION</h1>
+            <p>HTML5 provides built-in form validation features to ensure that user input meets specified criteria before submission. Common validation attributes include:</p>
+            <ul>
+                <li><strong>required</strong>: Ensures the field must be filled out.</li>
+                <li><strong>pattern</strong>: Specifies a regular expression that the input must match.</li>
+                <li><strong>min</strong> and <strong>max</strong>: Define minimum and maximum values for numeric inputs.</li>
+                <li><strong>maxlength</strong>: Sets the maximum number of characters allowed in a text input.</li>
+                <li><strong>type</strong>: Certain input types (like email, url) have built-in validation for format.</li>
+            </ul>
+            <p>Using these validation features enhances user experience and reduces the need for server-side validation.</p>
+        </article>
+    </div>
+    <hr color="darkgreen" width="100%"> 
 </body>
 </html>
