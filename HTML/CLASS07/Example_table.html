@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Tables</title>
+</head>
+<body>
+    <header>
+        <h1>Example Tables: using of colspan.</h1>
+        <p>This example demonstrates the use of the <code>colspan</code> attribute in HTML tables. The <code>colspan</code> attribute allows a cell to span across multiple columns, which can be useful for creating headers or footers that cover several columns.</p>
+    </header>
+    <div>
+        <table border="1" cellspacing="0" cellpadding="10">
+            <thead>
+                <tr>
+                    <th colspan="2">Device Name</th>
+                    <th>Color</th>
+                    <th>Model</th>
+                </tr>
+            </thead>
+            <tbody>   
+                <tr>
+                    <td colspan="2">1. Infinix Note 12</td>
+                    <td>Silver blue</td>
+                    <td>Note 12</td>
+                </tr>
+                <tr>
+                    <td colspan="2">2. Iphone 13 ProMax</td>
+                    <td>Black</td>
+                    <td>ProMax</td> 
+                </tr>
+                <tr>
+                    <td colspan="2">3. Samsung Galaxy S24</td>
+                    <td>Phantom Black</td>
+                    <td>S24</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4">Only these brands are available!</th>
+                </tr>
+            </tfoot>
+        </table>
+        <hr color="darkgreen" width="width-device width">
+        <hr color="darkgreen" width="width-device width">
+    </div> 
+    <br>
+    <div>
+        <section class="table-section">
+            <h1>Table with Mixed Attributes</h1>
+            <p>This table demonstrates the use of mixed attributes, including <code>border</code>, <code>cellspacing</code>, and <code>cellpadding</code>. These attributes can be used to control the appearance and spacing of table cells.</p>
+            <table border="1" cellspacing="0" cellpadding="10">
+                <tr>
+                    <th>NAME</th>
+                    <th>AGE</th>
+                    <th>GENDER</th>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>25</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>Jane</td>
+                    <td>30</td>
+                    <td>Female</td>
+                </tr>
+            </table>
+            <hr color="darkgreen" width="width-device width">
+            <hr color="darkgreen" width="width-device width">
+        </section>
+    </div>
+    <br>
+    <div>
+        <section class="blog">
+            <h1>Example of using rowspan</h1>
+            <p>This table demonstrates the use of the <code>rowspan</code> attribute, which allows a cell to span across multiple rows. This can be useful for creating cells that need to cover more than one row in a table.</p>
+            <table border="1" cellspacing="0" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>Game name</th>
+                        <th>Character's name</th>
+                        <th>Class</th>
+                    </tr>
+                </thead>
+                <tbody>   
+                    <tr>
+                        <td rowspan="2">Mobile Legends Bang Bang US</td>
+                        <td>Cell 2</td>
+                        <td>Cell 3</td>
+                    </tr>
+                    <tr>
+                        <td>Cell 4</td>
+                        <td>Cell 5</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th rowspan="3">These are my favorite games and classes.</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <hr color="darkgreen" width="width-device width">
+            <hr color="darkgreen" width="width-device width">
+        </section>
+    </div>
+    <!-- Remember update the relative route on SYNTAX.html for this assignment -->
+</body>
+</html>
